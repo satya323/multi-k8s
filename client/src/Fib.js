@@ -36,11 +36,11 @@ class Fib extends Component {
         this.setState({ index: ''});
     };
 
-    renderSeenIndexes() {
+    renderSeenIndexes = function() {
         return this.state.seenIndexes.map(({ number }) => number).join(', ');
     }
 
-    renderValues() {
+    renderValues = function() {
         const entries = [];
 
         for (let key in this.state.values) {
